@@ -1,7 +1,12 @@
-import TodoApp from "./components/TodoApp";
+import FetchUser from "./components/FetchUser";
 
 const App = () => {
-  return <TodoApp />;
+  return (
+    <>
+      <FetchUser />
+
+    </>
+  )
 };
 
 export default App;
