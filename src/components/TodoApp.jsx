@@ -21,11 +21,7 @@ function TodoApp() {
             prevTodos.filter((todo, i) => todo.id !== index)
         );
     }
-    // const handleComplete = (index) =>{
-    //     const allTodos = [...todos]
-    //     allTodos[index].isComplete = !allTodos[index].isComplete
-    //     setTodos(allTodos);
-    // }
+  
     const handleComplete = (index) => {
         setTodos(prevTodos =>
             prevTodos.map((todo, i) =>
