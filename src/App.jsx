@@ -1,16 +1,7 @@
-import Counter from "./components/Counter";
-import FormValidation from "./components/FormValidation";
+import TodoApp from "./components/TodoApp";
 
 const App = () => {
- 
-  return (
+  return <TodoApp />;
+};
 
-    <div className='flex flex-wrap justify-center gap-3 bg-gray-900 min-h-screen '>
-      {/* <Counter /> */}
-      {/* <Toggle /> */}
-      <FormValidation />
-    </div>
-  )
-}
-
-export default App
+export default App;
