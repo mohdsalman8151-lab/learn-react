@@ -10,6 +10,8 @@ import UseEffecEvent from "./components/UseEffecEvent";
 import AutoSaveForm from "./components/AutoSaveForm";
 
 import ToggleTheme from "./components/ToggleTheme";
+import Reducer from "./components/Reducer";
+import UseMemo from "./components/UseMemo";
 
 const App = () => {
   function NotFound(){
@@ -23,7 +25,7 @@ const App = () => {
         <a className="text-amber-50 " href="/counter">Counter</a> |  */}
         <nav className="text-blue-900">
          <Link  to="/card">Card</Link> | 
-        <Link  to="/counter">Counter</Link> | 
+        <Link  to="/usememo">Counter</Link> | 
         <Link  to="/user/100">User</Link> | 
         <Link  to="/products">Products</Link> | 
         <Link  to="/todos">Todos</Link> | 
@@ -34,7 +36,7 @@ const App = () => {
         </nav>
         <Routes>
             <Route  path="/card" element={<CardList />}/>
-            <Route path="/counter" element={<Counter/>} />
+            <Route path="/usememo" element={<UseMemo/>} />
             <Route path="/todos" element={<TodoApp/>} />
             <Route path="/user/:id" element={<User/>} />
             <Route path="/" element={<UseEffecEvent/>} />
